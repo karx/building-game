@@ -1,7 +1,8 @@
-## The Building Game
+## The Building Game 
 Based on game created by SethBling in Minecraft 
 https://www.youtube.com/watch?v=qBOHvRQ3orE
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f06b7d08-d173-4471-9b29-3ba5ecbc44b4/deploy-status)](https://app.netlify.com/sites/building-game/deploys)
 
 ## Extra
 Wanted to build on stream however the infra has failed me.
@@ -38,5 +39,7 @@ We use sass for styling, use the following:
 ```
 
 The deployment is done using Netlify.
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f06b7d08-d173-4471-9b29-3ba5ecbc44b4/deploy-status)](https://app.netlify.com/sites/building-game/deploys)
 
 
