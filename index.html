@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Game 🎛</title>
+    <script src="localforage.js"></script>
+    <!-- <script src="profile.js"></script> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="top-bar">
+            <div class="game-title">
+                The Building Game
+            </div>
+            <div class="game-status" id="game-status">
+                Lobby
+            </div>
+            <div class="profile" id="profile">
+                No Profile Set (Major)
+            </div>
+        </div>
+        <div class="connection-div main-segment" id="connection-div">
+            <h3 id="room-status">...Looking for rooms</h3>
+            <div class="each-room" id="each-room">
+                <input type="text" name="room-id" id="room-id">
+                <button id="join-room">Join</button>
+                <button id="create-room">Create Room</button>
+            </div>
+            <div class="all-rooms" id="all-rooms"></div>
+            <div class="room-btns"></div>
+        </div>
+        <div class="game-div main-segment" id="game-div">
+            <div class="write">
+                <h3>Write Div</h3>
+            </div>
+            <div class="draw">
+                <h3>Draw div</h3>
+                <canvas id="can" width="400" height="400"></canvas>
+            </div>
+        </div>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-firestore.js"></script>
+
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyB3-y0J8_nnrNQ7n69USTWEeppSXrIx_Bk",
+            authDomain: "building-game-thegame.firebaseapp.com",
+            databaseURL: "https://building-game-thegame.firebaseio.com",
+            projectId: "building-game-thegame",
+            storageBucket: "building-game-thegame.appspot.com",
+            messagingSenderId: "332540664635",
+            appId: "1:332540664635:web:c5152e429ac7c8f07ef51e",
+            measurementId: "G-C2LDM94XE7"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        let firestore = firebase.firestore();
+    </script>
+    <script src="drawcanvas.js"></script>
+    <script src="game.js"></script>
+</body>
+
+</html>

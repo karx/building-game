@@ -1,0 +1,60 @@
+body {
+    // width: 100%;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .profile {
+        padding-right: 20px;
+    }
+}
+
+.connection-div {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    border: groove;
+    .all-rooms {
+        display: flex;
+        flex-direction: column;
+        
+        table {
+            table-layout: fixed;
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid purple;
+            tbody tr:nth-child(odd) {
+                background-color: #ff33cc;
+              }
+              
+              tbody tr:nth-child(even) {
+                background-color: #e495e4;
+              }
+        }
+  
+    }
+    .each-room {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+.game-div {
+    display: none;
+}
+.draw {
+ 
+}
+
+#can {
+    border: dashed;
+}
