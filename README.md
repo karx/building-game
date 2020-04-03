@@ -26,4 +26,5 @@ Will only display current status of the game, etc.
 ```
 Refer image/scan
 ```
+![photo_2020-04-03_21-45-44](https://user-images.githubusercontent.com/7826138/78382589-bbb6a280-75f4-11ea-80c3-f3911d663faf.jpg)
 
